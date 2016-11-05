@@ -7,13 +7,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class LoginScreen extends Activity {
 
     private TextView username, password;
     private Button loginButton;
     private EditText userText, passText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,18 +27,11 @@ public class LoginScreen extends Activity {
 
     }
 
-    public void validate(boolean a) {
-        if (a) {
-            goToProfile();
-        } else {
-            Toast.makeText(LoginScreen.this, "Invalid username or password.", Toast.LENGTH_SHORT).show();
-        }
+    public void goToProfile(View view) {
+        Intent getProfileIntent = new Intent(this, Profile.class);
+        startActivity(getProfileIntent);
     }
 
-    public void goToProfile(View view) {
-        Intent getLoginScreenIntent = new Intent(this, LoginScreen.class);
-        startActivity(getLoginScreenIntent);
-    }
 
 
 }
