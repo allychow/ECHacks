@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.*;
 import android.graphics.drawable.Drawable;
 
-public class RewardScreen extends AppCompatActivity {
+public class RewardScreen extends Activity {
 
     private TextView rewardTitle, congrats_1;
     private Button redeemButton;

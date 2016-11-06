@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import allisonchow.greengreen.Profile;
-
 public class LoginScreen extends Activity {
 
     private TextView username, password;
@@ -30,8 +28,8 @@ public class LoginScreen extends Activity {
     }
 
     public void goToMainScreenIndex(View view) {
-        Intent getMainScreenIndex = new Intent(this, MainScreenIndex.class);
-        startActivity(getMainScreenIndex);
+        Intent getMainScreenIntent = new Intent(this, MainScreenIndex.class);
+        startActivity(getMainScreenIntent);
     }
 
 

@@ -29,8 +29,8 @@ public class RegisterScreen2 extends Activity {
         }catch (Exception e){
             Toast.makeText(this, "Please fill all boxes", Toast.LENGTH_SHORT).show();
         }
-        Intent getProfileIntent = new Intent(this, Profile.class);
-        startActivity(getProfileIntent);
+        Intent getMainScreenIntent = new Intent(this, MainScreenIndex.class);
+        startActivity(getMainScreenIntent);
 
     }
 
