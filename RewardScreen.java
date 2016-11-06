@@ -3,6 +3,7 @@ package allisonchow.greengreen;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +15,7 @@ import java.net.URL;
 import java.util.*;
 import android.graphics.drawable.Drawable;
 
-public class RewardScreen extends Activity {
+public class RewardScreen extends AppCompatActivity {
 
     private TextView rewardTitle, congrats_1;
     private Button redeemButton;

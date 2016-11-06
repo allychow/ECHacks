@@ -2,20 +2,24 @@ package allisonchow.greengreen;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
+import android.app.ActionBar;
 
-import org.w3c.dom.Text;
 
-public class Profile extends Activity {
+public class Profile extends AppCompatActivity {
 
     private TextView fnameProfile, lnameProfile, usernameProfile;
+    private Toolbar myToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
+        getSupportActionBar().hide();
+        myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
         fnameProfile = (TextView) findViewById(R.id.fnameProfile);
         fnameProfile.setText(((MyApplication) this.getApplication()).getFName());
         lnameProfile = (TextView) findViewById(R.id.lnameProfile);
