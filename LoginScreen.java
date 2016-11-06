@@ -23,7 +23,7 @@ public class LoginScreen extends Activity {
         userText = (EditText) findViewById(R.id.get_User_Text);
         passText = (EditText) findViewById(R.id.get_Pass_Text);
         username = (TextView) findViewById(R.id.user_name);
-        password = (TextView) findViewById(R.id.pass_word);
+        password = (TextView) findViewById(R.id.pass_word); //needs to be blanked out somehow?
 
     }
 
