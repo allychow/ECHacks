@@ -1,0 +1,53 @@
+#include <math.h>
+#include <string.h>
+const int ledPin=3; //Connect the LED Grove module to Pin12, Digital 12   RED
+const int ledPin_2=1;   // BLUE
+const int thresholdvalue=3;//The threshold for which the LED should turn on.
+float Rsensor_1; //Resistance of sensor in K
+float Rsensor_2;
+void setup() {
+ Serial.begin(9600); //Start the Serial connection
+ pinMode(ledPin,OUTPUT); //Set the LED on Digital 3 as an OUTPUT
+ pinMode(ledPin_2,OUTPUT);
+ }
+ 
+int count = 0;
+char scount[5];
+void loop() { 
+ double sensorValue_1 = analogRead(0);    //  
+ double sensorValue_2 = analogRead(1);    //
+ Rsensor_1=((float)(1023-sensorValue_1)*10/sensorValue_1)+8.5;
+ Rsensor_2=((float)(1023-sensorValue_2)*10/sensorValue_2)+8.5;
+ 
+ 
+ 
+ if(Rsensor_1>thresholdvalue)
+ {
+ digitalWrite(ledPin,HIGH); //There is an object
+ count += 1;
+ delay(1000);
+ itoa(count, scount, 10);
+ Particle.publish("Count", scount, PRIVATE);
+
+ }
+ else
+ {
+ digitalWrite(ledPin,LOW); //There is no object
+ //Particle.publish("Count", amount, PRIVATE);
+
+ } 
+ 
+ if(Rsensor_2>thresholdvalue)
+ {
+    digitalWrite(ledPin_2,HIGH); //There is an object
+    count += 1;
+     delay(1000);
+    itoa(count, scount, 10);
+    Particle.publish("Count", scount, PRIVATE);
+}
+ else
+ {
+    digitalWrite(ledPin_2,LOW); //There is no object
+ } 
+}
+
