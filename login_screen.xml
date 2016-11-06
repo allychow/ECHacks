@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:text="Log In"
         android:id="@+id/loginButton"
-        android:onClick="validate"/>
+        android:onClick="goToProfile"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

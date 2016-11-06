@@ -12,7 +12,7 @@ import android.widget.TextView;
 /**
  * Created by allis on 11/6/2016.
  */
-public class CreateOrJoinTeamMenu extends AppCompatActivity {
+public class CreateOrJoinTeamMenu extends Activity {
     private TextView textView2, textView3;
     private Button button2,button;
 

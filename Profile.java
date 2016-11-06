@@ -8,18 +8,14 @@ import android.widget.TextView;
 import android.app.ActionBar;
 
 
-public class Profile extends AppCompatActivity {
+public class Profile extends Activity {
 
     private TextView fnameProfile, lnameProfile, usernameProfile;
-    private Toolbar myToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.profile);
-        getSupportActionBar().hide();
-        myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
         fnameProfile = (TextView) findViewById(R.id.fnameProfile);
         fnameProfile.setText(((MyApplication) this.getApplication()).getFName());
         lnameProfile = (TextView) findViewById(R.id.lnameProfile);
