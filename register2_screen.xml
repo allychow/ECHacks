@@ -31,7 +31,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:inputType="textPassword"
+        android:inputType="text"
         android:id="@+id/get_Password"
         android:hint="Password"/>
 
@@ -39,7 +39,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter"
-        android:id="@+id/enter_Button"/>
+        android:id="@+id/enter_Button"
+        android:onClick="onEnterButtonClick"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

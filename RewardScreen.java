@@ -1,4 +1,4 @@
-package com.example.andrewseto.echacks;
+package allisonchow.greengreen;
 
 import android.app.Activity;
 import android.content.Intent;

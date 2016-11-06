@@ -1,4 +1,4 @@
-package com.example.andrewseto.echacks;
+package allisonchow.greengreen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterScreen extends Activity {
@@ -24,8 +25,9 @@ public class RegisterScreen extends Activity {
     }
     public void onNextButtonClick(View view){
         try {
-            String fname = String.valueOf(firstName.getText());
-            String lname = String.valueOf(lastName.getText());
+
+            ((MyApplication) this.getApplication()).setFName(String.valueOf(firstName.getText()));
+            ((MyApplication) this.getApplication()).setLName(String.valueOf(lastName.getText()));
             String emailStore = String.valueOf(email.getText());
             String numberStore = String.valueOf(number.getText());
 
@@ -35,6 +37,8 @@ public class RegisterScreen extends Activity {
 
         goToRegister2(view);
 
+
+
     }
 
     public void goToRegister2 (View view){
@@ -42,6 +46,5 @@ public class RegisterScreen extends Activity {
 
         startActivity(getRegisterScreen2Intent);
     }
-
 
 }

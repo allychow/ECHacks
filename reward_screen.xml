@@ -21,7 +21,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Redeem"
-        android:id="@+id/redeemButton"/>
+        android:id="@+id/redeemButton"
+        android:onClick="goToMain"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

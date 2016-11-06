@@ -1,4 +1,4 @@
-package com.example.andrewseto.echacks;
+package allisonchow.greengreen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,20 +23,16 @@ public class RegisterScreen2 extends Activity {
     }
     public void onEnterButtonClick(View view){
         try {
-            String user = String.valueOf(username.getText());
+            ((MyApplication) this.getApplication()).setUName(String.valueOf(username.getText()));
             String pass = String.valueOf(password.getText());
 
         }catch (Exception e){
             Toast.makeText(this, "Please fill all boxes", Toast.LENGTH_SHORT).show();
         }
+        Intent getProfileIntent = new Intent(this, Profile.class);
+        startActivity(getProfileIntent);
 
     }
 
-    public void goToMain (View view){
-        Intent getMainScreenIntent = new Intent(this, WelcomeScreen.class);
-
-        startActivity(getMainScreenIntent);
-
-    }
 
 }

@@ -19,6 +19,7 @@
         android:layout_height="60dp"
         android:text="Make a Team"
         android:id="@+id/button2"
+        android:onClick="goToMakeTeamMenuCodegen"
         android:layout_gravity="center_horizontal" />
 
     <TextView
@@ -38,5 +39,6 @@
         android:id="@+id/button"
         android:layout_gravity="center_horizontal"
         android:enabled="true"
+        android:onClick="goToJoinTeamMenu"
         android:layout_weight="0.02" />
 </LinearLayout>

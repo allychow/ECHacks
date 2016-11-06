@@ -1,4 +1,4 @@
-package com.example.andrewseto.echacks;
+package allisonchow.greengreen;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import allisonchow.greengreen.Profile;
 
 public class LoginScreen extends Activity {
 
@@ -27,9 +29,9 @@ public class LoginScreen extends Activity {
 
     }
 
-    public void goToProfile(View view) {
-        Intent getProfileIntent = new Intent(this, Profile.class);
-        startActivity(getProfileIntent);
+    public void goToMainScreenIndex(View view) {
+        Intent getMainScreenIndex = new Intent(this, MainScreenIndex.class);
+        startActivity(getMainScreenIndex);
     }
 
 
