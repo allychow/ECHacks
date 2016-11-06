@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create a Team - Invite Your Team"
+        android:id="@+id/textView6"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Code Generated"
+        android:ems="10"
+        android:id="@+id/editText11"
+        android:layout_gravity="center_horizontal"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="364dp"
+        android:layout_height="63dp"
+        android:text="This code generated can be shared to multiple people of your team, so they can join in as well. The more team members, hte more effective your team works collaboratively."
+        android:id="@+id/textView7"
+        android:paddingLeft="22dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="READY TO GO!"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

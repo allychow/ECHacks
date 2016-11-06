@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class RegisterScreen extends Activity {
@@ -36,8 +35,6 @@ public class RegisterScreen extends Activity {
 
         goToRegister2(view);
 
-
-
     }
 
     public void goToRegister2 (View view){
@@ -45,5 +42,6 @@ public class RegisterScreen extends Activity {
 
         startActivity(getRegisterScreen2Intent);
     }
+
 
 }

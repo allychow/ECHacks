@@ -30,8 +30,6 @@ public class RegisterScreen2 extends Activity {
             Toast.makeText(this, "Please fill all boxes", Toast.LENGTH_SHORT).show();
         }
 
-
-
     }
 
     public void goToMain (View view){
