@@ -29,9 +29,9 @@ public class LoginScreen extends Activity {
 
     }
 
-    public void goToMainScreenIndex(View view) {
-        Intent getMainScreenIndex = new Intent(this, MainScreenIndex.class);
-        startActivity(getMainScreenIndex);
+    public void goToProfile(View view) {
+        Intent getProfileIntent = new Intent(this, Profile.class);
+        startActivity(getProfileIntent);
     }
 
 

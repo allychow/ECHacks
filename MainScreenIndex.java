@@ -12,14 +12,14 @@ import android.widget.TextView;
 /**
  * Created by allis on 11/6/2016.
  */
-public class MainScreenIndex extends AppCompatActivity {
+public class MainScreenIndex extends Activity {
     private TextView textView;
     private Button NewTaskButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.create_or_join_team_menu);
+        setContentView(R.layout.main_screen_index);
         NewTaskButton = (Button) findViewById(R.id.NewTaskButton);
         textView = (TextView) findViewById(R.id.textView);
     }
