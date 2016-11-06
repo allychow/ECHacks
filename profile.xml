@@ -9,23 +9,16 @@
     android:weightSum="1">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"></LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        android:gravity="left|top"
+        android:gravity="left|top">
 
         <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:textSize="40dp"
-        android:id="@+id/nameView"
-        android:gravity="left|top"
-        android:text="Name"/>
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="50dp"
+            android:id="@+id/fnameProfile"
+            android:gravity="left|top"/>
 
         <LinearLayout
             android:orientation="vertical"
@@ -35,12 +28,18 @@
 
 
     <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="50dp"
+    android:id="@+id/lnameProfile"
+    android:gravity="left|top"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:id="@+id/joinTeamView"
-        android:gravity="left"
-        android:text="Team Name" />
+        android:textSize="40dp"
+        android:id="@+id/usernameProfile"
+        android:gravity="left|top"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -49,20 +48,6 @@
         android:layout_gravity="center_horizontal"
         android:layout_weight="0.13">
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:id="@+id/joinTeamEdit"
-            android:gravity="center"
-            android:hint="CODE"
-            android:layout_weight="1" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Join Team"
-            android:id="@+id/joinTeamButton" />
 
     </LinearLayout>
 

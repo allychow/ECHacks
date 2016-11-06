@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.andrewseto.echacks">
+    package= "allisonchow.greengreen">
 
     <application
         android:name=".MyApplication"
@@ -33,13 +33,21 @@
         <activity android:name=".Profile"
             android:label="Profile"
             android:theme="@style/AppTheme"/>
-        <activity android:name=".NewGoal"
-            android:label="NewGoal"
-            android:theme="@style/AppTheme"/>
         <activity android:name=".RewardScreen"
             android:label="RewardScreen"
             android:theme="@style/AppTheme"/>
-
+        <activity android:name=".CreateOrJoinTeamMenu"
+            android:label="CreateOrJoinTeamMenu"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".JoinTeamMenu"
+            android:label="JoinTeamMenu"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".MakeTeamMenuCodegen"
+            android:label="MakeTeamMenuCodegen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".MainScreenIndex"
+            android:label="MainScreenIndex"
+            android:theme="@style/AppTheme"/>
         <uses-permission
             android:name="android.permission.INTERNET"/>
         <uses-permission

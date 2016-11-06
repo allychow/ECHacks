@@ -21,14 +21,14 @@
         android:layout_gravity="center|top"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textStyle="bold"
-        android:textSize="60sp"
-        android:layout_weight="0.85"
-        android:gravity="center|center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textStyle="bold"
+            android:textSize="60sp"
+            android:layout_weight="0.85"
+            android:gravity="center|center"/>
 
         <Button
             android:layout_width="100dp"
