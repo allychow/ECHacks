@@ -9,7 +9,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity android:name=".WelcomeScreen">
             android:name=".WelcomeScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -28,10 +29,7 @@
             android:label="RegisterScreen"
             android:theme="@style/AppTheme"/>
         <activity android:name=".RegisterScreen2"
-            android:label="Register 2"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".Profile"
-            android:label="Profile"
+            android:label="RegisterScreen2"
             android:theme="@style/AppTheme"/>
         <activity android:name=".RewardScreen"
             android:label="RewardScreen"

@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * Created by allis on 11/6/2016.
  */
-public class MakeTeamMenuCodegen extends AppCompatActivity {
+public class MakeTeamMenuCodegen extends Activity {
     private TextView textView6, textView7;
     private EditText editText11;
     private Button button5;

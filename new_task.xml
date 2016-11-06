@@ -3,47 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="50dp"
+    android:padding="25dp"
     android:gravity="center|center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/user_name"
-        android:hint="Username:"/>
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="text"
-        android:id="@+id/get_User_Text"
-        android:hint="Username"/>
-    <TextView
+        android:layout_height="wrap_content"
+        android:hint="<Title of Goal>"
+        android:id="@+id/objectiveName"
+        />
+
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pass_word"
-        android:hint="Password:"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:inputType="text"
-        android:id="@+id/get_Pass_Text"
-        android:hint="Password"/>
+        android:id="@+id/tasks"
+        android:layout_gravity="center_horizontal"
+        android:hint="Task"
+         />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log In"
-        android:id="@+id/loginButton"
+        android:text="Save Task"
+        android:id="@+id/taskSaveButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="saveTask"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save and Close"
+        android:id="@+id/newSaveButton"
+        android:layout_gravity="center_horizontal"
         android:onClick="goToMainScreenIndex"/>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:orientation="vertical">
-
-
-
-
     </LinearLayout>
-
 </LinearLayout>

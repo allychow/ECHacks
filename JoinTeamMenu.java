@@ -12,7 +12,7 @@ import android.widget.TextView;
 /**
  * Created by allis on 11/6/2016.
  */
-public class JoinTeamMenu extends AppCompatActivity {
+public class JoinTeamMenu extends Activity {
 
     private TextView textView4;
     private EditText editText;
