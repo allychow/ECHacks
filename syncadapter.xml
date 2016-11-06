@@ -1,3 +1,5 @@
+// potentially useful for future implementation of web server communication with the app
+// for current version as of 06/11/16, unused.
 <?xml version="1.0" encoding="utf-8"?>
 <sync-adapter
     xmlns:android="http://schemas.android.com/apk/res/android"
