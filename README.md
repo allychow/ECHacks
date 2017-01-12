@@ -19,3 +19,4 @@ We learned a little bit about a lot of different concepts and programs. We got a
 
 What's next for GreenGreen:
 We hope to get the app and hardware actually conversing with each other, or at least get them both fully functional separately!
+Future functionalities we plan to include are databasing to allow comparison of progress between users, and the ability to send notifications to other users. This would allow the app to be used for competition between users to see who is the "most green", on top of tracking the status of recycling/garbage bins.
